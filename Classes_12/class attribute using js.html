@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Class attribute using javascript</title>
+</head>
+<body>
+<button onclick="myfunction()">Hide Elements</button>
+<h2 class="city">London</h2>
+<p>London is the capital of England</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of france</p>
+<script>
+function myfunction(){
+    var x=document.getElementsByClassName("city");
+    for(var i=0;i<x.length;i++){
+          x[i].style.display="none";
+     }
+}
+</script>
+</body>
+</html>
