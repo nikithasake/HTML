@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Form Elements</title>
+</head>
+<h2>Textarea</h2>
+<textarea  name="msg" rows="5" cols="20">
+</textarea>
+<h2>Fieldset,legend,button</h2>
+<form action=" " oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<fieldset>
+  <legend>Personalia</legend>
+  <label for="fname">Firstname</label>
+   <input type="text" name="fname" id="fname"><br>
+  <button type=button onclick="alert('You clicked on button')">Click me</button>
+</fieldset>
+<h2>Datalist</h2>
+<input list="browsers" name="browsers">
+<datalist id="browsers">
+  <option value="safari">
+  <option value="firefox">
+  <option value="chrome">
+</datalist><br>
+<h2>Output</h2>
+0
+<input type="range" id="a" name="a" value="50">
+100+
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b"></output>
+</form>
