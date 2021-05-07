@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Form Input Types</title>
+</head>
+<body>
+<form>
+<h2>Hidden</h2>
+<label for="fname">Firstname</label>
+<input type="text" id="fname" name="fname">
+<input type="hidden" id="custId" name="custId" value="6264">
+<input type="submit" value="submit">
+<h2>Month</h2>
+<label for="bdaymonth">Birthday(month and year)</label>
+<input type="month" id="bdaymonth" name="bdaymonth">
+<h2>Number</h2>
+<label for="quantity">Quantity(b/w 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5">
+<h2>Number restriction</h2>
+<label for="quantity">Quantity</label>
+<input type="number" id="quantity" name="quantity" min="0" max="100" step="30" value="30">
+<h2>Range</h2>
+<label for="vol">Volume</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+<h2>Search</h2>
+<label for="gsearch">search</label>
+<input type="search" id="gsearch" name="gsearch">
+</form>
