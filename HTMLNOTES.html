@@ -1,0 +1,3227 @@
+WHAT IS HTML?
+================
+-  HTML Stands for HYPER TEXT MARKUP LANGUAGE
+-  HTML describes the structure of webpages.
+-  HTML consists of series of  Elements 
+-  HTML elements are reprsented by Tags.
+-  HTML elements tell the browser how to display the content
+-  It supports all browsers.
+- HTML is Not Case Sensitive
+- 1991:Tim Berners-Lee invented HTML.
+- 2014 : HTML5
+
+HTML tags
+=========
+<!DOCTYPE html> ---->declaration defines that this document is an HTML document
+		                  - It is not case-sensitive.
+	                         - <!DOCTYPE> declaration represents the document type, and helps browsers to display  web pages correctly.
+   <html>                  ---->element is the root element of an HTML page.
+   <head>                 ---->element contains meta information about the HTML page.
+   <title>                   ---->element specifies a title for the HTMLpage.
+    <body>                ----->element defines the document's body,and is a container for all the visiblecontents,
+	                           such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+    <h1>                   ----->element defines a large heading
+     <p>                    ------> element defines a paragraph
+
+What is an HTML Element?
+=====================
+An HTML element is defined by a start tag, some content, and an end tag.
+The HTML element is everything from the start tag to the end tag.
+syntax:
+-------
+<tagname>Content goes here...</tagname>
+eg:<h1>My First Heading</h1> 
+
+Never Skip the End Tag
+======================
+Some HTML elements will display correctly, even if you forget the end tag.
+
+Unexpected results and errors may occur if you forget the end tag!
+
+HTML Documents
+==============
+All HTML documents must start with a document type declaration: <!DOCTYPE html>.
+
+The HTML document itself begins with <html> and ends with </html>.
+
+The visible part of the HTML document is between <body> and </body>. 
+
+HTML Headings
+==============
+HTML headings are titles or subtitles that you want to display on a webpage.
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+- <h1> defines the most important heading.(BIG)
+- <h6> defines the least important heading(SMALL)
+
+Browsers automatically add some white space (a margin) before and after a heading.
+
+<h1>This is heading 1</h1>      
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+3<h6>This is heading 6</h6>
+
+Bigger Headings
+====================
+Each HTML heading has a default size. However, you can specify the size for any heading with the style 
+attribute, using the CSS font-size property
+
+<h1 style="font-size:60px;">Heading</h1>
+
+
+HTML Paragraphs
+==============
+HTML paragraphs are defined with the <p> tag.
+
+ paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+The browser will automatically remove any extra spaces and lines when the page is displayed.
+
+eg:
+<p>This is a paragraph.</p>
+
+HTML Horizontal Rules
+======================
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The <hr> element is used to separate content (or define a change) in an HTML page
+
+The <hr> tag is an empty tag, which means that it has no end tag.
+
+eg:
+
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<hr> 
+
+HTML Links
+============
+HTML links are defined with the <a> tag.
+The link's destination is specified in the href attribute. 
+
+eg:
+<a href="https://www.w3schools.com">This is a link</a> 
+
+HTML Images
+============
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes.
+
+eg:
+ <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> 
+
+Here,alt means if image is not displayed then it will display w3schools.com (text) when we gave wrong address of image or anything...
+
+
+HTML Line Breaks
+===================
+The <br> tag defines a line break.
+
+HTML elements with no content are called empty elements.
+
+The <br> tag is an empty tag, which means that it has no end tag.
+
+eg:
+ <p>This is a <br> paragraph with a line break.</p> 
+
+o/p:
+
+This is a
+paragraph with a line break.
+
+HTML <pre> Element
+=================
+The HTML <pre> element defines preformatted text.
+
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves(maintains in its original) both spaces and line break
+
+eg:
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+</pre>
+
+
+HTML Attributes
+==============
+ -  All HTML elements can have attributes
+ -  Attributes provide additional information about elements
+ -  Attributes are always specified in the start tag
+ -  Attributes usually come in name/value pairs like: name="value"
+
+The href Attribute
+===============
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to
+
+ <a href="https://www.w3schools.com">Visit W3Schools</a> 
+
+The src Attribute
+==========
+The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed
+
+<img src="img_girl.jpg"> 
+
+There are two ways to specify the URL in the src attribute:
+-------------------------------------------------------------------
+1. Absolute URL - Links to an external image that is hosted on another website.
+
+ Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name.
+
+ - If the URL begins without a slash, it will be relative to the current page. 
+Example: src="img_girl.jpg".
+-  If the URL begins with a slash, it will be relative to the domain. 
+Example: src="/images/img_girl.jpg"
+
+The width and height Attributes
+======================
+The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels)
+
+ <img src="img_girl.jpg" width="500" height="600"> 
+
+The Alt Attribute
+================
+The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed
+
+ <img src="img_girl.jpg" alt="Girl"> 
+
+The Style Attribute
+===============
+The style attribute is used to add styles to an element, such as color, font, size, and more.
+
+syntax:
+---------
+<tagname style="property:value;">
+
+The property is a CSS property. The value is a CSS value.
+
+eg:
+
+<p style="color:blue;">This is Nikitha</p>
+
+Background Color
+----------------------
+
+The CSS background-color property defines the background color for an HTML element.
+
+<body style="background-color:blue;">
+
+eg:
+
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+
+Text Color
+---------------
+The CSS color property defines the text color for an HTML element.
+
+<h1style="color:blue;">This is Nani</h1>
+
+eg:
+ <h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p> 
+
+Border Color
+---------------
+
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+Color Values
+----------------
+
+In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values.
+
+RGB Color Values
+-----------------------
+rgb(red, green, blue)
+
+Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255). 
+
+ex:
+rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+
+RGBA Color Values
+----------------------
+RGBA color values are an extension of RGB color values with an Alpha channel - which specifies the opacity for a color.
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+eg:
+
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+
+HEX Color Values
+-----------------------
+In HTML, a color can be specified using a hexadecimal value in the form:
+
+#rrggbb
+
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+eg:
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+
+To display black, set all color parameters to 00, like this: #000000.
+To display white, set all color parameters to ff, like this: #ffffff. 
+
+HSL Color Values
+-----------------------
+hsl(hue, saturation, lightness)
+
+Hue is a degree on the color wheel from 0 to 360.0 is red, 120 is green, and 240 is blue.
+Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+Lightness is also a percentage value, 0% is black, and 100% is white.
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+
+HSLA Color Values
+------------------------
+HSLA color values are an extension of HSL color values with an Alpha channel - which specifies the opacity for a color.
+
+hsla(hue, saturation, lightness, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+eg:
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+
+Fonts
+=====
+The CSS font-family property defines the font to be used for an HTML element
+
+<h1 style="font-family:verdana;">This is a Nimbu</h1>
+<p style="font-family:courier;">This is Harish</p>
+
+Text Size
+---------------
+
+The CSS font-size property defines the text size for an HTML element.
+
+<h1 style="font-size:300%;">This is a Nimbu</h1>
+
+Text Alignment
+------------------------
+
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+
+<h1 style="text-align:center;">This is a Nimbu</h1>
+
+The Lang Attribute
+=============
+The lang attribute inside the <html> tag, to declare the language of the Web page
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+
+‍Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.
+
+example : specifies English as the language and United States as the country:
+
+<!DOCTYPE html>
+<html lang="en-US"
+<body>
+.........
+</body>
+</html>
+
+
+The title Attribute
+====================
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element.
+
+<p title="I'm a tooltip">This is a paragraph.</p> 
+
+You cannot omit quotes around an attribute value if the value contains spaces.
+
+If you move the mouse over the paragraph above, your browser will only display the first word from the title. 
+
+Single or Double Quotes ? 
+---------------------------------------------
+
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
+
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes
+
+<p title="I 'am' Nikitha">NIKKI</p> 
+
+o/p: I 'am' Nikitha
+
+<p title='I "am" Nikitha'>NIKITHA</p>
+
+ o/p:I "am" Nikitha
+
+HTML Text Formatting
+=================
+HTML contains several elements for defining text with a special meaning
+
+<b> and <strong> Elements
+------------------------------------
+The HTML <b> element defines bold text,without any extra importance.
+ 
+ <b>This text is bold</b> 
+
+The HTML <strong> element defines  text with strong importance.
+
+The content inside is typically displayed in bold.
+
+<strong>This text is important!</strong>
+
+HTML <i> and <em> Elements
+---------------------------------------
+The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+
+<i>This Text is italic</i>
+
+The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+
+<em>This Text is emphasised</em>
+
+HTML <small> Element
+--------------------------------
+The HTML <small> element defines smaller text.
+
+<small>This is some smaller text</small>
+
+HTML <mark> Element
+----------------------------------
+The HTML <mark> element defines text that should be marked or highlighted
+
+<p>Dont forget to drink<mark>water</mark>every day</p>
+
+HTML <del> Element
+----------------------------
+The HTML <del> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text
+
+<p>My favourite color is <del>blue</del>pink</p>
+
+HTML <ins> Element
+---------------------------
+The HTML <ins> element defines a text that has been inserted into a document. Browsers will usually underline inserted text.
+
+<p>My fav color is <ins>pink</ins></p>
+
+HTML <sub> Element
+------------------------------
+The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font.
+
+<p>H<sub>2</sub>O</p> 
+
+HTML <sup> Element
+-----------------------------
+The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font.
+
+<p>a<sup>2</sup>-b<sup>2</sup></p>
+
+HTML Quotation and Citation Elements
+==============================
+HTML <blockquote> for Quotations
+----------------------------------------
+The HTML <blockquote> element defines a section that is quoted from another source.
+
+Browsers usually indent <blockquote> elements.
+
+eg:
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+</blockquote>
+
+HTML <q> for Short Quotations
+----------------------------------------
+The HTML <q>tag defines short quotation.
+
+Browser normall insert quotation marks around the quotation.
+
+<p>Moral:<q>Honest is the best policy</q></p>
+
+HTML <abbr> for Abbreviations
+----------------------------------------
+The HTML <abbr> tag defines an abbreviation.
+
+Marking abbreviations can give useful information to browsers, translation systems and search-engines.
+
+<p>The<abbr title="World Health Organisation">WHO</abbr></p>
+
+HTML <address> for Contact Information
+--------------------------------------------------
+The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.
+
+eg:
+<address>
+Written by John Doe.<br>
+Visit us at:<br>
+</address>
+
+HTML <cite> for Work Title
+-----------------------------------
+The HTML <cite> tag defines the title of a creative work.
+
+The text in the <cite> element usually renders in italic.
+
+eg:
+<p><cite>The Scream</cite></p>
+
+HTML <bdo> for Bi-Directional Override
+-----------------------------------------------
+
+The HTML <bdo> tag is used to override the current text direction.
+
+eg:
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+HTML Comment Tags
+=================
+
+<!-- Write your comments here -->
+
+Notice that there is an exclamation point (!) in the start tag, but not in the end tag.
+
+What is CSS?
+===========
+Cascading Style Sheets is used to format the layout of webpages.
+
+with CSS,you can control the color,font,the size of the text,space b/w elements,how elements are positioned and layout,what background images or background color are to be used,different display for different devices and screen sizes.
+
+Cascading means that a style applied to a parent element will also be apply for child element within the parent.
+
+Using CSS
+======
+CSS can be applied to HTML in 3 ways
+
+Inline: by using style attribute  inside  HTML element
+Internal:by using <style> element   in the  <head> section.
+External:by using <link> element to link to an external CSS file
+
+Inline CSS
+----------------
+An inline CSS is used to apply unique style to single HTML.
+
+An inline CSS uses style attribute of an HTML element.
+
+eg:
+<p style="color:red;">NIKKI</p> 
+
+
+Internal CSS
+-----------------
+
+An internal CSS is used to define a style for  single HTML page.
+An internal CSS is define in <head> section for HTML page , within a  <style> element.
+
+eg:
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color:pink;}
+h1     {color:blue;}
+p	{color:green;}
+</style>
+</head>
+<body>
+	<h1>NIMBU</h1>
+	<p>NIKKI</p>
+</body>
+<html>
+
+External CSS
+-----------------
+An External CSS is used to define the style for many HTML Pages.
+
+To use an external CSS file ,add a link to it in the <head> section of each HTML page.
+
+eg:
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>NIKKI</h1>
+<p>NIMBU</p>
+</body>
+</html>
+
+styles.css
+--------------
+body{
+  background-color:pink;
+}
+h1{
+  color:red;
+}
+p{
+  color:green;
+}
+
+CSS colors,Fonts,size
+---------------------------------
+
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+
+eg:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1{
+  color:blue;
+  font-family:verdana;
+  font-size:300%;
+}
+</style>
+</head>
+<body>
+<h1>NIKKI HARISH NIMBU</h1>
+</body>
+</html>
+
+CSS Border
+----------------
+The CSS border property defines a border around an HTML element.
+
+eg:
+<html>
+<head>
+<style>
+p{
+ border:2px solid green;
+}
+</style>
+</head>
+<body>
+<p>Nani</p>
+</body>
+</html>
+
+CSS Padding
+------------------
+The CSS Padding defines a space b/w text and a border.
+
+eg:
+p{
+ border:2px solid pink;
+ padding:30px;
+}
+
+
+CSS Margin
+----------------
+The CSS Margin property defines a space b/w outside the border.
+
+eg:
+p
+{
+border:2px solid blue;
+margin:50px;
+}
+HTML Links
+=======
+HTML Links-Hyperlinks
+-------------------------------
+HTML links are hyperlinks.
+
+You can click on a link and jump to another document.
+
+When you move the mouse over a link,the mouse arrow will turn into a little hand.
+
+Note:A link does not have to be text.A link can be an image or any other HTML element!
+
+By default links will appear as follows in all browsers:
+-  An unvisited link is underlined and blue.
+-  An visited link is underlined and purple.
+-  An active link is underlined and red.
+
+HTML Links-Target attribute
+-------------------------------------
+By default,the linked page will be displayed in the current browser window.To change this,you must specify another target for the link.
+
+The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self   :   Default.Opens the document in the same window as it was clicked.
+_blank : Opens the document in a new window or tab.
+_parent : Opens the document in the parent frame.
+_top : Opens the document in the full body of the window.
+
+Absolute URLs vs Relative URLs
+------------------------------------
+An Absolute URL is a full web address in the href attribute
+
+An Relative URL is a local link (a link to a page withi the same website).
+
+eg:
+<h1>Absolute URLs</h1>
+<p><a href="http://WWW.w3.org/">W3</a></p>
+
+eg:
+<h1>Relative URLs</h1>
+<p><a href="/Desktop/nikki.html">CSS</a></p>
+
+HTML Links - Use an image as a link
+------------------------------------------------
+
+To use an image as a link,just put the <img> tag inside the <a> tag
+
+eg:
+<a href="nikki.html"><img src="smily.jpg" alt="smily pic"</a>
+
+Link to an Email Address
+--------------------------------
+use mailto: inside the href attribute to create a link that opens the user's email program.
+
+<a href="mailto:some123@gmail.com">send mail</a>
+
+Button as a Link
+------------------------
+To us an HTML button as a link,u have to add some javascript code.
+
+JS allows u to specify what happens at certain events,such as a click of a button.
+
+eg:
+<button onclick="document.location='file:///home/student/Desktop/nikkihtml.html' ">Html</button>
+
+Link Titles
+-------------------
+The title attribute specifies extra information about an element.The information is most often shown as a tooltip text when the mouse moves over the element.
+
+<a href="file:///home/student/Desktop/nikkihtml.html" title="NIKKI HTML">Html</button>
+
+HTML Links - Different colors
+-----------------------------------------
+HTML Link colors
+------------------------
+By default, a link will appear like
+
+- An unvisited link is underlined and blue.
+- An visited link is underlined and purple.
+- An active link is underlined and red.
+
+we can change the link state colors,by using CSS
+
+eg:
+Here,an unvisited link will be green with no underlined.A visited link will be pink with no underline.An active link will be yellow and underlined.In addition,when mousing over a link(hover)it will become red and underlined.
+
+<style>
+a:link{
+    color:green;
+    background-color:transparent;
+    text-decoration:none;
+}
+a:visited{
+    color:pink;
+   background-color:transparent;
+   text-decoration:none;
+}
+a:hover{
+   color:red;
+   background-color:transparent;
+   text-decoration:underline;
+}
+a:active{
+   color:yellow;
+   background-color:transparent;
+   text-decoration:underline;
+}
+</style>
+<body>
+<a href="file:///home/student/Desktop/nikkihtml.html" title="NIKKI HTML" target="_blank">Html</a>
+<body>
+
+Link Buttons
+-------------------
+A link can also be styled as a button,by using CSS.
+
+eg:
+<style>
+a:link,a:visited{
+    background-color:blue;
+    color:white;
+    padding:15px 25px;
+    text-align:center;
+    text-decoration:none;
+    display:inline-block;
+}
+a:hover,a:active{
+  background-color:red;
+}
+</style>
+</head>
+<body>
+<a href="file:///home/student/Desktop/nikkihtml.html" title="NIKKI HTML" target="_blank">Html</a>
+</body>
+
+
+HTML Links-create bookmarks
+==================
+create a Bookmark in HTML
+------------------------------------
+Bookmarks can be useful if a webpage is very long.
+
+To create a bookmark-first create the bookmark,the add a link to it.
+
+When the link is clicked,the page will scroll down or up to the location with the bookmark.
+
+eg:
+First,use the id attribute to create a bookmark
+
+<h2 id="c4">Chapter 4</h2>
+
+Then,add a link to the bookmark("jump to chapter4"),from within the same page
+
+<a href=#c4">Jump to chapter 4</a>
+
+eg:
+ <html>
+<body>
+<p><a href="#c4">Jump to chapter4</a></p>
+
+<h2>chapter 1</h2>
+<p>This chapter is 1</p>
+
+<h2>chapter 2</h2>
+<p>This chapter is 2</p>
+
+<h2>chapter 3</h2>
+<p> This chapter is 3</p>
+
+<h2 id="c4">chapter4</h2>
+<p>This chapter is 4</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter is 5</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter is 6</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter number is 7</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter is 8</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter is 9</p>
+
+<h2 >Chapter 10</h2>
+<p>This chapter is 10</p>
+</body>
+</html>
+
+
+HTML Images
+========
+The HTML <img> tag is used to embed an image in a web page.
+
+Images are not technically inserted into a web page;images are linked to webpages.The <img> tag creates a holding space for the referenced image.
+
+The <img> tag is empty,it contains attributes only,and does not have a closing tag.
+
+The <img> tag has two required attributes:
+- src:specifies the path to the images
+- alt:specifies an alternate text for the image.
+
+The src Attribute
+----------------------
+The required src attribute specifies the path (URL) to the image. 
+
+The alt Attribute
+---------------------
+The required alt attribute provides an alternate text for an image, if the user for some reason cannot view it .
+
+The value of the alt attribute should describe the image.
+
+<img src="smile.jpeg" alt="smily">
+
+Image size-width and height
+------------------------------------
+you can use the style attribute to specify the width and height of an image.
+
+eg:
+<img src="smile.jpeg" alt="smilyyy" style="width:500px,heigth:600px;">
+
+Alternatively,you can use the width and height attributes
+
+eg:
+<img src="smile.jpeg" alt="smilyy" width="500" height="600">
+
+Image as a Link
+-------------------
+To use an image as a link,put the <img> tag inside the <a> tag.
+
+eg:
+<a href="desktop/nikki.html">
+   <img src="smiley.jpg" alt="smile" style="width:42px;height:30px;">
+</a>
+
+Image Floating
+----------------------
+Using the CSS float property to let the image flaot to the right or to the left of a text.
+
+<p><img src="smiley.jpg" alt="smile" style="float:right;">The image will float to the right of the text</p>
+
+HTML Image Maps
+============
+Image Maps
+---------------
+The HTML <map> tag defines an image map.An image map is an image with clickable areas.The area are defined with one or more <area> tags.
+
+eg:
+<body>
+<img src="smily.jpg" alt="smile" usemap=#workmap">
+
+<map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="computer" href="comp.html">
+    <area shape="rect" coords="290,172,333,250" alt="phone" href="phone.html">
+    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html">
+</map>
+</body>
+
+The Image
+--------------
+The image is inserted using the <img> tag.The only difference from other images is that you must add a usemap attribute.
+
+<img src="smiley.jpg" alt="smile" usemap="#workmap">
+
+The usemap value starts with a hash tag # followed by the name of the image map,and is used to create a relationship b/w the image and the image map.
+
+create Image Map
+-----------------------
+The <map> element is used to create an image map,and is linked to the image by using the required name attribute
+
+eg:
+<map name="workmap">
+
+The name attribute must have the same value as the <img> usemap attribute.
+
+The Areas
+-----------
+A clickable area is defined using an <area> element
+
+shape
+******
+You must define the shape of the clickable area,and you can choose one of these values.
+-  rect: defines a rectangular region.
+- circle:defines a circular region.
+- poly :defines a polygonal region.
+- default :defines the entire region.
+
+shape="rect"
+************
+The coordinates for shape="rect" come in pairs,one for x-axis and one for the y-axis.
+
+so,the coordinates 34,44 is located 34pixels from the left margin and 44 pixels from the top.
+
+The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top.
+
+eg:
+<area shape="rect" coords="34,44,270,350" href="comp.html">
+
+shape="circle"
+************
+To add a circle are,first locate the coordinates of the center of the circle 337,300.
+
+Then specify the radius of the circle 44px.
+
+eg:
+<area shape="circle" coords="337,300,44" href="coffe.html">
+
+shape=poly
+***********
+The shape="poly" contains several coordinate points,which creates a shape formed with straight lines(a polygon).
+
+This can be used to create any shape.Like may be a croissant shape.
+
+we have to find the x and y coordinates for all edges of the croissant.
+
+The coordinates come in pairs,one for x-axis and one for y-axis.
+
+eg:
+<area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+Image Map and Javascript
+-----------------------------------
+A clickable area can also trigger a javascript function.
+
+Add a click event to the <area> element to execute a javascript function.
+
+Eg:Here,we use the onclick attribute to execute a javascript function when the area is clicked.
+
+<map name="workmap">
+   <area shape="circle" coords="337,300,44" onclick="myfFnction()">
+</map>
+<script>
+function myFunction(){
+  alert("You clicked the coffe cup");
+}
+</script>
+
+HTML Background Images
+----------------------------------
+To add a background image on a HTML element,use the HTML style attribute and the CSS background-image property.
+
+eg:
+<body>
+<div style="background-image:url('imgg.jpg');">
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+</div>
+</body>
+
+eg:specify the background image in the <style> element.
+
+<style>
+div{
+  background-image:url('img.jpg');
+}
+</style>
+<body>
+<div>
+You can specify background images<br>
+for any visible HTML element.<br>
+</div>
+
+Background Image on a page
+--------------------------------------------
+If you want the entire page to have a background image,you must specify the background image on the <body> element.
+
+eg:
+<style>
+body{
+   background-image:url('img.jpg');
+}
+</style>
+<body>
+<p>This is Nikitha</p>
+</body>
+
+Background Repeat
+--------------------------
+If the background image is smaller than the element,the image will repeat itself,horizontally and verticalyy,until it reaches the end of the element.
+
+eg:
+<head>
+<style>
+body {
+  background-image: url('example_img_girl.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Repeat</h2>
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+</body>
+</html>
+
+To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+
+<style>
+body{
+ background-repeat:no-repeat;
+}
+</style>
+
+Background cover
+-----------------------
+If you want the background image to cover the entire element,you can set the background-size property to cover.
+
+Also,to make sure the entire element is always covered,set the background-attachment property to fixed.
+
+eg:
+<style>
+body{
+  background-image:url('img.jpg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+</style>
+
+Background stretch
+--------------------------
+If you want the background image to strech to fit the entire element,you can set the background-size property to 100% 100%.
+
+if we resizing the browser window,we will see that the image will stretch,but always cover the entire element.
+
+eg:
+<style>
+body{
+   background-image:url('img.jpg');
+   background-repeat:no-repeat;
+   background-attachment:fixed;
+   background-size:100% 100%;
+}
+</style>
+
+HTML <picture> Element
+----------------------------------
+The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+
+The <picture> element contains one or more <source> elements,each referring to different images through the srcset attribute.This way the browser can choose the image that best fits the current view or device.
+
+Each <source> element has a media attribute that defines when the image is the most suitable.
+
+eg:
+<html>
+<head>
+</head>
+<body>
+<picture>
+<source media="(min-width:650px)" srcset="/home/student/Desktop/index.jpeg">
+<source media="(min-width:465px)" srcset="/home/student/Desktop/l.jpg">
+<img src="/home/student/Desktop/1.jpg" style="width:auto;">
+</picture>
+</body>
+</html>
+
+Note:Always specify an <img> element as the last child element of the <picture> element.The <img> element is used by browsers that do not support the <picture> element,or if none of the <source> tags match.
+
+HTML Tables
+------------------------
+HTML tables allows to arrange data into rows and columns.
+
+The <table> tag defines an HTML table.
+Each table row is defined with a <tr> tag.Each table header is defined with a <th> tag.Each table data is defined with a <td> tag.
+By default,the text in <th> elements are bold and centered.
+
+By default,the text in <td> elements are regular and left-aligned.
+
+eg:
+<table style="width:100%">
+<tr>
+  <th>Firstname</th>
+   <th>Lastname</th>
+    <th>Age</th>
+</tr>
+<tr>
+  <td>NIKITHA</td>
+  <td>SAKE</td>
+  <td>45</td>
+</tr>
+<tr>
+ <td>NIMBU</td>
+  <td>SAKE</td>
+  <td>37</td>
+</tr>
+</table>
+
+
+Add a Border
+----------------
+To add a border to a table,use CSS border property.
+
+eg:
+<style>
+table,th,td{
+   border:1px solid blue;
+}
+</style>
+ 
+collapsed Borders
+--------------------------
+The border collapse into one border,add css property border-collaps property.
+
+eg:
+<style>
+table,th,td{
+   border:1px solid blue;
+   border-collapse:collapse;
+}
+</style>
+
+cell padding
+---------------------
+cell padding specifies b/w the cell content and its borders.
+
+To set the padding,use CSS padding property
+
+eg:
+
+th,td{
+padding:10px;
+}
+
+Left-align Headings
+--------------------------
+To left-align the table headings,use the CSS text-align property.
+
+eg:
+th{
+ text-align:left;
+}
+
+Add Border Spacing
+----------------------------
+Border specifies the space between the cells
+
+eg:
+table{
+ border-spacing:15px;
+}
+
+cell that spans many columns
+-----------------------------------------
+To make a cell span more than one column ,use the colspan attribute.
+
+eg:
+<body>
+<table style="width:100%">
+<tr>
+  <th>Firstname</th>
+  <th colspan="2">Telephone</th>
+<tr>
+<td>nikki</td>
+  <td>37873473</td>
+<td>8537258</td>
+</tr>
+</table>
+</body>
+</html>
+</style>
+</head>
+
+
+
+cells that spans many Rows
+-----------------------------------
+To make a cell span more than one row,use the rowspan attribute.
+
+eg:
+
+</style>
+<body>
+<table style="width:100%">
+<tr>
+  <th>Firstname</th>
+   <td>NIKKI</td>
+<tr>
+  <th rowspan="2">Telephone</th>
+<td>8764735</td>
+</tr>
+<tr>
+  <td>37873473</td>
+</tr>
+</table>
+</body>
+</html>
+
+caption
+------------------
+To add a caption to a table use <caption> tag.
+
+we must add <caption > tag after <table> tag.
+
+eg:
+</style>
+<body>
+<table style="width:100%">
+<caption >family</caption>
+<tr>
+  <th>Firstname</th>
+     <th >Telephone</th>
+<tr>
+   <td>NIKKI</td>
+  <td>8764735</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+A Special Style for One Table
+----------------------------------------
+To define a special style for one particular table,add an id attribute to the table
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,th,td{
+   border:1px solid blue;
+  border-collapse:collapse;
+
+}
+th,td{
+  padding:15px;
+}
+th{
+ text-align:left;
+}
+#t3 tr:nth-child(even){
+background-color:grey;
+}
+#t3 tr:nth-child(odd){
+background-color:blue;
+}
+#t3 th{
+background-color:pink
+}
+</style>
+<body>
+<table style="width:100%">
+<caption >family</caption>
+<tr>
+  <th>Firstname</th>
+     <th >Telephone</th>
+<tr>
+   <td>NIKKI</td>
+  <td>8764735</td>
+</tr>
+<tr>
+  <td>NImbu</td>
+  <td>37873473</td>
+</tr>
+</table>
+<table id="t3" width="100%">
+<caption >family</caption>
+<tr>
+  <th>Firstname</th>
+     <th >Telephone</th>
+<tr>
+   <td>NIKKI</td>
+  <td>8764735</td>
+</tr>
+<tr>
+  <td>Nimbu</td>
+  <td>37873473</td>
+</tr>
+</body>
+</html>
+
+HTML Lists
+============
+HTML lists allow web developers to group a set of related items in lists.
+
+Unordered HTML List
+===================
+An unordered list starts with the <ul> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with bullets (small black circles) by default:
+
+eg:
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul> 
+
+choose list item marker
+---------------------------
+The CSS list-style-type property is used todefine the style of the list marker.
+
+values
+*******
+disc : sets the list item marker to a  bullet(default)
+circle : sets the list item market to a circle.
+square : sets the list item marker to a square
+none : The list items will not be marked
+
+eg:
+<body>
+<ul style="list-style-type=disc;">
+<li>coffee</li>
+<li>milk</li>
+</ul>
+
+Nested HTML List
+------------------------
+<body>
+<ul>
+   <li>coffee</li>
+   <li>tea
+       <ul>
+           <li>black tea</li>
+            <li>green tea</li>
+       </ul>
+    </li>
+</ul>
+
+Horizontal list with CSS
+--------------------------
+use the CSS property float:left to display a list horizontally.
+
+<html>
+<head>
+<style>
+ul{
+ list-style-type:none;
+ margin:0;
+ padding:0;
+overflow:hidden;
+background-color:orange;
+}
+li{
+ float:left;
+}
+li a{
+  display:block;
+  color:green;
+  text-align:center;
+ padding:16px;
+ text-decoration:none;
+}
+li a:hover{
+background-color:pink;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#Home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contactus">contact us</a></li>
+  <li><a href="#about">about</a><li>
+</ul>
+</body>
+</html>
+
+Ordered HTML List
+==================
+An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.
+
+The list items will be marked with numbers by default.
+
+eg:
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+The Type Attribute
+----------------------
+The type attribute of the <ol> tag,defines the type of the list item marker.
+
+type="1" : the list items will be numbered with numbers(default).
+type="A" : the list items will be numbered with uppercase letters.
+type="a" : the list items will be numbered with lowercase letters.
+type="I" : the list items will be numbered with uppercase roman numbers.
+type="i" :the list items will be numbered with lowercase roman numbers.
+
+eg:
+<ol type="1">
+  <li>coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Control List Counting
+---------------------------
+By default ,an ordered list will start counting from 1.If u want to start counting from specified number,u can use the start attribute.
+
+eg:
+<ol start="20">
+<li>Milk</li>
+<li>Coffee</li>
+</ol>
+
+HTML Description Lists
+-----------------------------
+A description list is a list of terms,with a description of each term.
+
+The <dl>tag defines the description list,the <dt>tag defines the term(name),and the <dd> tag describes each term.
+
+eg:
+<dl>
+<dt>Coffee</dt>
+<dd>Coffee is sweet</dd>
+<dt>White</dt>
+<dd>Milk is white</dd>
+</dl>
+
+HTML Block and Inline Elements
+=========================
+They are two display values:block and inline.
+
+Block-level Elements
+--------------------------
+A block-level element always starts on a newline.
+
+A block-level element always takes up the full width available.
+
+A block-level element has a top and a bottom margin,whereas an inline element does not.
+
+The <div> element  is a block level element.
+
+eg:
+<div>Hello</div>
+
+Here are the block-level elements in HTML:
+
+eg:
+<video width="320" height="240" controls>
+  <source src="crud.mp4" type="video/mp4">
+</video>
+
+eg:
+<audio controls>
+  <source src="horse.mp3" type="audio/mp3">
+</audio>
+
+eg:
+<nav>
+<a href="/html/">HTML</a> |
+<a href="/css/">CSS</a> |
+<a href="/js/">JavaScript</a> |
+<a href="/python/">Python</a>
+</nav>
+
+eg:
+<style>
+.mydiv{
+  border:5px outset red;
+  background-color:red;
+  text-align:center;
+}
+</style>
+<body>
+<div class=mydiv>
+<h2>Nikitha</h2>
+<p>NANI</h2>
+</div>
+</body>
+
+eg:
+<body>
+<form action="1.html">
+ <fieldset> <!---The <fieldset> tag draws a box around the related elements.-->
+      <legend>FORM</legend>
+       <label for="fname">First name:</label>
+       <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+     <label for ="email">Email</label>
+     <input type="email" id="email" name="email"><br><br>
+     <label for="birthday:">Birthday:</label>
+     <input type="date" id="birthday" name="birthday"><br><br>
+     <input type="submit" value="submit">
+  </fieldset>
+</form>
+
+
+Inline Elements
+------------------
+ An inline element does not start on a new line.
+
+An inline element only takes up as much width as necessary.
+
+This is a <span> element inside a paragraph.
+
+eg:
+<span>Hello</span>
+
+Here are the inline elements in HTML:
+
+eg:
+<button>Click Me</button>
+
+eg:Radio button
+<body>
+<form action=" ">
+<legend>NIKKI</legend>
+<label for="male">Male</label>
+<input type="radio" name="gender" id="male"value="male"><br><br>
+<label for="female">Female</lable>
+<input type="radio" name="gender" id="female" value="female"><br><br>
+<label for="others">Others</label>
+<input type="radio" name="gender" id="others" value="others"><br><br>
+</form>
+
+eg:Select element
+<body>
+<form action=" ">
+   <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+        <option value="volvo">volvo</option>
+        <option value="saab">saab</option>
+        <option value="opeal">opeal</option>
+ </select>
+</form>
+</body>
+
+eg:Review
+<body>
+<form action=" ">
+<label for="review>Review forcourse:</label>
+<textarea id="review" name="review" rows="4" cols="50">
+</textarea>
+</body>
+<input type="submit" value="submit">
+
+<div> Element
+-------------------
+The <div> element is often used as a container for other HTML elements.
+
+The <div> element has no required attributes,but style,class and id are common.
+
+When used together with CSS, the <div> element can be used to style blocks of content.
+
+eg:
+<body>
+<div style="background-color:red;color:white;padding:20px;">
+<p>Nikitha Nimbu Nani</p>
+</div>
+</body>
+
+<span> element
+-------------------
+The <span>element is an inline container used to mark up a part of a text,or a part of a document.
+
+The <span> element has no required attributes, but style, class and id are common.
+
+When used together with CSS,the <span> element can be used to style parts of the text.
+
+eg:
+<body>
+<p>Nimbu<span style="color:blue;font-weight:bold;">STUDING P2</span>
+<span style="color:darkolivegreen;font-weight:bold;">NIKITHA</span>SAKE</p>
+</body>
+
+Class Attribute
+------------------
+The class attribute is often used to point to a class name in a style sheet.It can also be used by js to access and manipulate elements with the specific class name.
+
+eg:
+<head>
+<style>
+.city{
+  border:5px solidblack;
+  background-color:red;
+  margin:20px;
+  padding:20px;
+}
+</style>
+<body>
+<div class="city">
+<h2>Nikitha</h2>
+</div>
+<div class="city">
+<h2>Nimbu</h2>
+</div>
+<div class="city">
+<h2>Harish</h2>
+</div>
+</body>
+</html>
+
+for span
+-----------
+eg:
+
+<style>
+.city{
+  font-size:20px;
+ color:red;
+}
+</style>
+<body>
+<h2>This is<span class="city">Nani</span></h2>
+<p>This is <span class="city">Nimbu</span></p>
+</body>
+</html>
+
+Syntax for class
+---------------------
+To create a class;write a period(.) character,followed by a classname.Then,define the CSS properties within curly braces{}.
+
+eg:
+<style>
+.city{
+}
+</style>
+
+Multiple Classes
+--------------------
+To define multiple classes,seperate the class name with a space.
+
+eg:
+<style>
+.city{
+  color:red;
+  background-color:pink;
+  padding:10px;
+}
+.nikki{
+ text-align:center;
+}
+</style>
+<body>
+<h2 class="city main nikki">NIKKI</h2>
+<h2 class-"city">NIMBU</h2>
+<h2 class="city">NANI</h2>
+</body>
+
+Different Elements Can Share Same Class
+--------------------------------------------------
+<style>
+.city{
+  color:red;
+  background-color:pink;
+  padding:10px;
+}
+</style>
+<body>
+<h2 class="city">NIKKI</h2>
+<h2 class="city">NIMBU</h2>
+<h2 class="city">NANI</h2>
+</body>
+
+Use the class attribute in javascript
+------------------------------------------
+js can access elements with a specific class name with the getElementsByClassName() method.
+
+eg: Click on a button to hide all elements with the class name"city".
+<body>
+<button onclick="myfunction()">Hide elements</button>
+<h2 class="city">London</h2>
+<p>London is capital of England</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of france</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of japan</p>
+<script>
+function myfunction(){
+   var x = document.getElementsByClassName("city");
+   for (var i=0;i<x.length;i++){
+       x[i].style.display = "none";
+}
+}
+</script>
+
+id attribute
+========
+The id attribute is used to specify a unique id for an HTML element.The value of id attribute must be unique within the HTML document.
+
+The id attribute is used to a specific style declaration in a style sheet.
+
+syntax for id:
+# followed by an id name.Then,define the CSS propeties within curly braces{}.
+
+ex:
+<style>
+#myheader{
+   background-color:lightblue;
+   color:pink;
+  padding:20px;
+  text-align:center;
+}
+</style>
+<body>
+<h2 id="myheader">Nani</h2>
+</body>
+
+Difference Between Class and ID
+----------------------------------------
+A class name can be used by multiple HTML elements,while an id name msut only be used by one HTML element within the page.
+
+eg:
+<style>
+#myheader{
+  background-color:blue;
+  color:white;
+  padding:20px;
+ text-align:center;
+}
+.city{
+ background-color:red;
+ color:white;
+ padding:10px;
+}
+</style>
+<body>
+<h1 id="myheader">Nikki</h1>
+<h2 class="city">London</h2>
+<h2 class="city">Paris</h2>
+</body>
+ 
+Using id attribute in javascript
+--------------------------------------
+js can access an element with a specific id with the getElementById() method.
+
+eg:
+<body>
+<h1 id="myheader">Hello world</h1>
+<button onclick="displayresult()">Change text</button>
+<script>
+function displayresult(){
+   document.getElementById("myheader").innerHTML="Have a nice day";
+}
+</script>
+</body>
+
+Iframes
+-----------
+The HTML <iframe> tag specifies an inline frame.
+
+ iframe is used to display a web page within a web page.
+
+An inline frame is used to embed another document within the current HTML document.
+
+syntax:
+
+<iframe src="url" title="description">
+
+Iframe-Set Height and width
+-----------------------------------------
+use the height and width attributes to specify the size of the iframe.
+
+The height and width are specified in pixels by default.
+
+eg:
+<iframe src="/home/student/Desktop/nikkihtml.html " width="200" height="200" title="Iframe Example"></iframe>
+
+by using style attribute
+*********************
+<iframe src="/home/student/Desktop/nikkihtml.html "  style="width:200px;height=200px;" title="Iframe Example"></iframe>
+
+Iframe-Remove the Border
+----------------------------------
+By default,an iframe has a border around it.
+
+To remove the border,add the style attribute and use the CSS border property.
+*********************************************************************
+eg:
+<iframe src="/home/student/Desktop/nikkihtml.html " style="border:none;" title="Iframe Example"></iframe>
+
+With CSS ,change the size,style and color of the iframe border
+*******************************************************
+
+eg:
+<iframe src="/home/student/Desktop/nikkihtml.html "  style="border:2px dotted blue;" title="Iframe Example></iframe>
+
+Iframe - Target for a Link
+----------------------------------
+An iframe can be used as the target frame for a link.
+
+The target attribute of the link must refer to the name attribute of the iframe.
+
+eg:
+<iframe src="/home/student/Desktop/nikkihtml.html" name="iframe_a" title="Ex"></iframe>
+<p><a href="/home/student/Desktop/nikki.html" target="iframe_a">Frame</a></p
+
+HTML - Javascript
+===========
+Js makes HTML pages more dynamic and interactive.
+
+eg:
+<body>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date and time</button>
+<p id="demo"></p>
+</body>
+
+<script> Tag
+---------------------
+<script> tag is used to define a client-side script(js).
+
+The <script> element either contains script stmts,or it points to an external script file through the src attribute.
+
+Common uses for js are Image manipulation,form validation,and dynamic changes of content.
+
+To select an HTML element,js most often uses the document.getElementById() method.
+
+eg:The js ex writes "Hello JS" into an HTML element with id="demo"
+
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello js";
+</script>
+</body>
+
+ A Taste of js
+---------------------------
+js can change the content
+
+eg:
+<body>
+<button type="button" onclick="myfunction()">Click me</button>
+<p id="demo">This is NIKKI</p>
+<script>
+function myfunction(){
+document.getElementById("demo").innerHTML = "This is Nimbu";
+}
+</script>
+</body>
+
+JavaScript can change styles:
+**************************
+<body>
+<p id="demo">Js can change the style of an HTML element</p>
+
+<script>
+function myfunction() {
+     document.getElementById("demo").style.color="blue";  
+     document.getElementById("demo").style.fontSize="30px";
+     document.getElementById("demo").style.backgroundColor="pink";
+}
+</script>
+<button type="button" onclick="myfunction()">Click me</button>
+</body>
+
+<noscript> tag
+----------------------------
+<noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a 
+browser that doesn't support script.
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML="Hello Nimbu";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+</body>
+
+File Path
+=================
+It describes the location of a file in a website's folder structure.
+
+<img src="pic.jpg">  : "pic.jpg"  is located in the same folder as the current page.
+<img src="images/pic.jpg"> : located in the images folder in the current folder.
+ <img src="/images/pic.jpg"> : located in the images folder at the root of the current web.
+<img src="../pic.jpg"> : located in the folder one level up from the current folder.
+
+Absolute File Paths
+--------------------------
+It is the full URL to a file.
+ <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
+
+Relative File paths
+-------------------------
+It points to a file relative to the current page.
+
+ <img src="images/picture.jpg" alt="Mountain">
+
+Head Element
+================
+<head> Elements
+------------------------
+The <head> element is a container for metadata and is placed b/w the <html> and <body> tag.
+
+HTML metadata is  data about the HTML document.Metadata is not displayed.
+
+<title> Element
+---------------------- 
+It defines the title of the document.The title must be text-only,and it is shown in the browser's title bar or in the page's  tab.
+
+<style> Element
+-------------------------
+It defines style info for a single HTML page.
+
+eg:
+<style>
+</style>
+
+<link> Element
+------------------------
+It defines the relationship b/w the current document and an external resource.
+
+<link> tag is most often used to link to external style sheets.
+
+eg:
+<link rel="stylesheet" href="mystyle.css">
+<meta> tag
+=========
+<meta> element is typically used to specify the character set,page,description,keywords,author of the document,and viewport settings.
+
+The metdata will not be displayed on the page,but are used by the browsers,by search engines,and other web services.
+
+eg:
+#Define the character set used:
+<meta charser="UTF-8">
+
+#Define keywords for search engines
+<meta name="keyword" content="HTML,CSS,Javascript">
+
+#Define a description of your web page.
+<meta name="description" content="Free web tutorials">
+
+#Define the author of a page.
+<meta name="author" content="John Doe">
+
+#Refresh document every 30sec.
+<meta http-equiv="refresh" content="30">
+
+#Setting the view port to make your website look good on all devices.
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+Setting the Viewport
+----------------------------------
+
+The viewport is the users visible area of a web page.It varies with the device-it will be smaller on a mobile phone than on a computer  screen.
+
+eg:
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+width=device-width part sets the width of the page to follow the screen-width of the device.
+
+initial-scale=1.o part sets the initial zoom level when the page is first loaded by the browser.
+
+<script> Element
+-------------------------
+It  is used to define client-side javascripts.
+
+eg:
+<script>
+function myfun(){
+   document.getElementById("demo").innerHTML="Hello";
+}
+</script>
+
+<base> Element
+-----------------------
+It specifies the base URL and/or target for all relative URLs in a page.
+
+<base> tag must have either an href or a target attribute present,or both.
+
+There can only be one single <base> element in a document.
+
+eg:
+
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+<body>
+<p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+<p><a href="tags/tag_base.asp">HTML base tag</a>Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank"</p>
+</body>
+
+ Layout Elements
+=================
+HTML Layout Techniques
+-----------------------------------
+There are four different techniques to create multicolumn layouts. Each technique has its pros and cons:
+
+    CSS framework
+    CSS float property
+    CSS flexbox
+    CSS grid
+
+
+CSS frameworks
+---------------------
+
+CSS float layout
+-----------------------
+<html>
+<head>
+<title>Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color:grey;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+}
+nav{
+   float:left;
+   width:30%;
+   height:300px;
+  background:#ccc;
+  padding:20px;
+}
+nav ul{
+  list-style-type:none;
+  padding:0;
+}
+article{
+   float:left;
+   padding:20px;
+   width:70%;
+  background-color:#f1f1f1;
+  height:300px;
+}
+footer{
+  background-color:#777;
+  padding:10px;
+ text-align:center;
+color:white;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+ <h2>Cities</h2>
+</header>
+<section>
+ <nav>
+    <ul>
+        <li><a href="#">London</a></li>
+         <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+   </ul>
+ </nav>
+ <article>
+   <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area 
+        of over 13 million inhabitants.</p>
+  </article>
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
+</body>
+
+CSS Flexbox Layout
+-----------------------------
+<html> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{
+  box-sizing:border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Cities</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
+ HTML Semantics Element
+====================
+A Semantic element clearly describes its meaning to both the browser and the developer.
+
+Ex of non-semantic elements:<div> and <span>-Tells ntg about its content.
+
+Ex of semantic elements:<form>,<table> and <article>-clearly defines its content.
+
+Semantic Elements
+------------------------
+Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page.
+
+<section> element
+************** 
+It defines a section in a document.
+
+eg:
+<section>
+<p>Nikitha</p>
+</section>
+
+<article> Element
+**************
+It specifies independent,self-contained content.
+
+eg:
+<article>
+<p>Nani</p>
+</article>
+
+<header> Element
+****************
+It represents a container for introductory content or a set of navigational links.
+
+<header>cannot be placed within a <footer>,<address>or another <header> element.
+
+eg:
+<article>
+  <header>
+    <h1>Article Heading</h1>
+   </header>
+</article>
+
+<footer> Element
+**************
+It defines a footer for a document or section.
+
+eg:
+<footer>
+<p>NIKKI</p>
+</footer>
+
+<nav> Element
+**************
+It defines a set of navigation links.
+
+The <nav> element is intended only for major block of navigation links.
+
+eg:
+<nav>
+  <a href="#">HTML</a>
+  <a href="#">CSS</a>
+</nav>
+
+<aside> Element
+**************
+It defines some content aside from the content it is placed in (like a sidebar).
+
+<aside> content should be indirectly related to the surrounding content.
+
+eg:
+<aside>
+<p>NIMBU</p>
+</aside>
+
+<figure> and <figcaption> Elements
+*****************************
+<figure> tag specifies self-contained content,like illustrations,diagram,photos,code listings,etc.
+
+<figcaption> tag defines a caption for <figure> element.It can be placed as the first or as the last child of a <figure> element.
+
+<img> element defines the actual image.
+
+ex:
+<figure>
+  <img src="pic.jpg" alt="flower">
+   <figcaption>Fig.1:Italy</figcaption>
+</figure>
+
+Omitting <html> and <body>?
+-----------------------------------
+HTML page will validate without the <html> and <body>.
+
+omitting <body> can produce error in older browsers.
+
+omitting <html> and <body> can also crash DOM and  XML s/w.
+
+XHTML
+==============
+What is XHTML?
+----------------------
+- XHTML stands for extensible hyper text markup language.
+- XHTML is HTML defined as an XML application.
+- It supports all major browsers.
+
+Why XHTML?
+--------------------
+XML is markup language where all documents must be marked up correctly.
+
+XHTML was developed to make HTML more extensible and flexible to work with other data formats(such as XML).Browsers ignore errors in HTML pages,and try to display the website even if it has some errors in the markup.So XHTML comes with a much stricter error handling.
+
+Differences from HTML
+-----------------------------------
+<!DOCTYPE> is mandatory
+The xmlns attribute in html is mandatory.
+<html>,<head>,<title>,and <body> are mandatory.
+Elements must always be properly nested.
+Elements must always be closed.
+Elements must always be in lowercase.
+Attribute names must always be in lowercase.
+Attribute values must always be quoted.
+Attribute minimization is forbidden
+
+XHTML - <!DOCTYPE ....> Is Mandatory
+--------------------------------------------------------
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlnx="http://www.w3.org/1999/xhtml">
+<head>
+    <title>XHTML</title>
+</head>
+<body> 
+  <p>NIKITHA</p>
+</body>
+</html>
+
+XHTML Elements Must be Properly Nested
+--------------------------------------------------------------
+<b><i>NANI</i></b>
+
+XHTML Elements Must Always be closed
+---------------------------------------------------------
+<p>NIMBU</p>
+
+XHTML Empty Elements Must always be closed
+------------------------------------------------------------------
+NANI<br/> 
+<img src ="ni.jpg" alt="NIKKI"/>
+
+XHTML Elements Must be in Lowercase
+----------------------------------------------------
+<body>
+<p>NIMBU</p>
+</body>
+
+XHTML attributes Names Must be in Lowercase and Attribute values Must be quoted
+--------------------------------------------------------------------------------------------------------------------
+<a href="http:www.google.com">Google</a>
+
+XHTML Attribute Minimization is Forbidden
+--------------------------------------------------------------
+Good:
+<input type="checkbox" name="vehicle" value="car" checked="checked"/>
+
+Bad:
+<input type="checkbox" name="vehicle" value="car" checked/>
+
+HTML FORMS
+================
+Form is used to collect user input.The user input is most often sent to a server for processing.
+
+<form> Element
+--------------------------
+<form> element is used to create an HTML form for user input.
+
+eg:
+<form>
+form elements
+</form>
+
+The <form> element is a container for diff types of input elements,such as:textfields,checkboxes,radio buttons,submit buttons,etc.
+
+
+<input> Element
+---------------------------
+<input> element is the most used form element.
+eg:
+<input type="text">
+<input type="radio">
+<input type="checkbox">
+<input type="submit">
+<input type="button">
+
+Text Fields
+---------------------------
+The <input type="text"> defines a single-line input field for text input.
+
+<label>  Element
+------------------------
+<lablel> tag defines a label for many form elements.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+eg:
+<form>
+   <label for="fname">FIRST NAME</label>
+   <input type="text" id="fname" name="fname">
+</form>
+
+Radio Buttons
+-----------------------
+The <input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices.
+
+eg:
+<form>
+   <label for="male">MALE</label>
+   <input type="radio" id="male" value="male" name="gender">
+  <label for="female">FEMALE</label>
+   <input type="radio" id="female" value="female" name="gender">
+</form>
+
+
+Checkboxes
+---------------------
+The <input type="checkbox">defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+eg:
+<form>
+  <label for ="vehicle">CYCLE</label>
+  <input type="checkbox" id="vehicle" name="vehicle" value="cycle">
+    <label for ="vehicle1">BIKE</label>
+  <input type="checkbox" id="vehicle1" name="vehicle1"  value="bike">
+</form>
+
+Submit Button
+---------------------
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+The form-handler is typically a file on the server with a script for processing  i/p data.
+The form-handler is specified in the form's action attribute.
+
+eg:
+<form action="  ">
+ <input type="submit" value="submit">
+</form>
+
+Name attribute for  <input>
+---------------------------------------
+Each input field must have a name attribute to be submitted.
+
+If the name attribute is omitted,the value of the input field will not be sent at all.
+
+eg:It will not submit the value of the "Firstname" input filed.
+<html>
+<body>
+<form action=" ">
+ <label for="fname">Firstname</label>
+ <input type="text" id="fname" value="Nikki">
+ <input type="submit" value="submit">
+</form>
+<p>If you click the "Submit" button, the form-data will be sent to a page called "   ".</p>
+<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+</body>
+</html>
+
+
+HTML Form Attributes
+====================
+Action Attribute
+-----------------------
+The action attribute defines the action to be performed when the form is submitted.
+
+usually,the form data is sent to a file on the server when the user clicks on the submit button.
+
+Tip:If the action attribute is omitted,the action is set to the current page.
+
+eg:On submit, send form data to " "
+<form action=" ">
+ <label for="fname">Firstname</label>
+ <input type="text" id="fname" value="Nikki">
+ <input type="submit" value="submit">
+</form>
+
+Target Attribute
+-----------------------
+The target attribute specifies where to display the response that is received after submitting the form.
+
+_blank : displayed in a new window
+_self : Current window
+_parent : parent frame
+_top : full body of the window
+framename : displayed in a named iframe.
+
+eg:
+<form action=" " target="_blank">
+
+
+The Method Attribute
+-----------------------------
+The method attribute specifies the HTTP method to be used when submitted the form data.
+
+The form-data can be sent as URL variables(with method="get") or as HTTP post transaction(with method="post").
+
+The default HTTP method when submitting form data is GET.
+
+eg:
+<form action="  " method="get">
+
+eg:
+<form action=" " method="post">
+
+Notes on GET:
+- Appends the form data to the URL ,in name/value pairs.
+- Never use GET to send Sensitive data
+- URL length:2048char
+-GET is used for non-secure data,like query strings in Google
+
+Notes on POST:
+- Appends the form data inside the body of the HTTP request(the submitted form data is
+   not shown in the URL).
+- POST has no size limitations,and can be used to send large amounts of data.
+
+Autocomplete Attribute
+--------------------------------
+It specifies whether a form should have autocomplete on or off.
+
+The autocomplete is on,the browser automatically complete values based on values that 
+the user has entered before.
+
+eg:
+<form action=" " autocomplete="on">
+
+eg:
+<form action=" " autocomplete="off">
+
+Novalidate Attribute
+-------------------------------
+The novalidate attribute is a boolean attribute.
+
+eg:
+ <form action="/action_page.php" novalidate> 
+
+
+HTML Form Elements
+===================== 
+
+<input> Element
+------------------------------
+<input> element is the most used form element.
+
+eg:
+<input type="text">
+<input type="radio">
+<input type="checkbox">
+<input type="submit">
+<input type="button">
+
+<label>  Element
+------------------------
+<lablel> tag defines a label for many form elements.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+eg:
+<form>
+   <label for="fname">FIRST NAME</label>
+   <input type="text" id="fname" name="fname">
+</form>
+
+<select> Element
+-------------------------
+<select> element defines a drop-down list
+
+eg:
+<form action=" ">
+  <label for="cars">Choose a car:</label>
+   <select id="cars"  name="cars">
+      <option value="volvo">volvo</option>
+       <option value="fiat">FIAT</option>
+  </select>
+
+The <option> element defines an option that can be selected.
+
+By default,the first item in the drop-down list is selected.
+
+To define a pre-selected option,add the selected attribute to the option.
+
+eg:
+<form action=" ">
+  <label for="cars">Choose a car:</label>
+   <select id="cars"  name="cars">
+      <option value="volvo">volvo</option>
+       <option value="fiat" selected>FIAT</option>
+  </select>
+
+Visible values
+-----------------
+Use the size attribute to specify the number of visible values.
+
+eg:
+<form action=" ">
+  <label for="cars">Choose a car:</label>
+   <select id="cars"  name="cars" size="2"> 
+      <option value="volvo">volvo</option>
+       <option value="fiat">FIAT</option>
+  </select>
+
+Allow Multiple Selections
+------------------------------------
+Use the multiple attribute to allow the user to select more than one value.
+
+eg:
+<form action=" ">
+  <label for="cars">Choose a car:</label>
+   <select id="cars"  name="cars" size="2"  multiple> 
+      <option value="volvo">volvo</option>
+       <option value="fiat">FIAT</option>
+  </select>
+
+**Hold down ctrl+window to select multiple options**
+
+<textarea> Element
+-----------------------------
+It defines a multi-line input field(text area).
+
+ex:
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden
+</textarea>
+
+The rows attribute specifies the visible numbers of lines in a text area.
+The cols attribute specifies the visible width of a text area.
+
+Define the size of the text area using css
+*******************************************
+<textarea name="message" style="width:200px; height:600px;">The cat was playing in the garden.</textarea>
+
+<button> Element
+-----------------------------
+It defines a clickable button.
+
+eg:
+<button type="button" onclick="alert('Hello World')">Click Me</button>
+
+<fieldset> and <legend> Elements
+--------------------------------------------
+<fieldset> element is used to group related data in a form.
+<legend> element defines a caption for the <fieldset> element.
+
+eg:
+<form action=" ">
+ <fieldset>
+   <legend>Personalia</legend>
+    <label for="fname">Firstname</label>
+    <input type="text" id="fname" name="fname" value="nikki">
+ </fieldset>
+</form>
+
+<datalist> Element
+----------------------------
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+User will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element,must refer to the id attribute of the <datalist> element.
+
+eg:
+<form action="  ">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+      <option value="Internet Explorer">
+       <option value="Firefox">
+       <option value="chrome">
+  </datalist>
+</form>
+
+<output> Element
+-----------------------------
+It represents the result of a calculation.
+
+eg:
+<form action="  "
+   oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+   0
+  <input type="range" id="a" name="a" value="50">
+  100+
+  <input type="number" id="b" name="b" value="50">
+    =
+  <output name="x" for="a b"></output>
+</form>
+HTML Input types
+==================
+
+Input Type Text
+---------------------------
+eg:
+<input type="text">
+
+Input Type Password
+------------------------------
+eg:
+<input type="password">
+
+Input type submit
+---------------------------
+eg:
+<input type="submit" value="submit">
+
+Input type Reset
+----------------------------
+
+eg:
+<input type="reset"> defines a reset button that will reset all form values to their default values.
+
+***If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+
+Input Type Radio
+-----------------------------
+
+Radio buttons let a user select ONLY ONE of a limited number of choices
+eg:
+<input type="radio">
+
+Input Type Checkbox
+--------------------------------------
+eg:
+<input type="checkbox"> 
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+Input type Button
+-----------------------------
+It defines a clickable button.
+
+eg:
+<button type="button" onclick="alert('Hello World')">Click Me</button>
+
+Input type color
+------------------------
+It is used for input fields that should contain a color.
+
+eg:
+<form>
+  <label for="favcolor">Select your fav color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</form>
+
+Input Type Date
+----------------------
+It is used for input fields that should contain a date.
+
+<form>
+ <label for="birthday">BDY:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+use the min and max attributes to add restrictions to dates
+****************************************************
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>blue
+   <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+   <label for=datemin">Enter a date after 2000-01-01:</label>
+   <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+   
+Input type Datetime-local
+------------------------------------
+<input type="datetime-local"> specifies a date and time input field,with no time zone.
+
+eg:
+<form>
+  <label for="birthdaytime">Birthday(date and time):</label>
+ <input rype="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+
+Input Type Email
+--------------------------
+The <input type="email"> is used for input fields that should contain an e-mail address.
+
+eg:
+<form>
+<label for="email">Enter your email:</label>
+<input rype="email" name="email" id="email">
+</form>
+
+Input type File
+----------------------
+The <input type="file"> defines a file-select field and a"Browser" button for file uploads.
+
+eg:
+<form>
+  <label for="myfile">Select a file:</label>
+   <input type="file" id="myfile" name="myfile">
+</form>
+
+Input Type Hidden
+--------------------------
+The <input type="hidden"> defies a hidden input field(not visible to a user or cannot modified by user when form is submitted).
+
+A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+eg:
+<form>
+  <label for="fname">First name:</label>
+   <input type="text" id="fname" name="fname"><br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <input type="submit" value="Submit">
+</form>
+
+Input Type Month
+--------------------------
+The <input type="month"> allows the user to select a month and year.
+
+eg:
+<form>
+  <label for=bdaymonth">Birthday(month and year):</label>
+   <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+
+Input type Number
+---------------------------
+The <input type="number"> defines a numeric input field.
+
+set restrictions on what numbers are accepted.
+
+eg:
+<form>
+  <label for="quantity">Quantity(b/w 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+Input Restrictions
+*********************
+checked  ------> Specifies that an input field should be pre-selected when the page loads
+disabled ------->input field should be disabled
+max       -------->maximum value for an input field
+maxlength ------>maximum  number of character for an input field.
+min       ---------->minimum value for an input field
+pattern  --------->specifies a regular expression to check the input value against
+readonly  -------->specifies that an input field is read only.
+required  --------->input field is required (must be filled out)
+size        --------->specifies the width of an input field
+step      ---------->legal  number intervals for an input field.
+value    ---------->default value for an input field.
+
+eg:
+ <form>
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+</form> 
+
+Input type Range
+---------------------
+The <input type="range"> defines a control for entering a number whose exact value is not imp.
+default range is 0 to 100.However,we can set restrictions on what numbers are accepted with the min,max and step attributes.
+
+eg:
+<form>
+  <label for="vol">Volume(b/w 0 and 50):</label>
+  <input type="range" id="vol" min="0" max="50">
+</form>
+
+Input type Search
+------------------------
+It is used for search fields.
+
+eg:
+<form>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</form>
+
+Input type Tel
+------------------------
+It is used for input fields that should contains a telephone number.
+
+eg:
+<form>
+  <label for="phone">Enter phno: </label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+  <small>Format:123-45-678</small>
+</form
+
+Input type Time
+------------------------
+It allows the user to select a time.
+
+eg:
+<form>
+  <label for="appt">Select a time</label>
+  <input type="time" id="appt" name="appt">
+</form>
+
+Input type url
+--------------------
+It is used for input fields that should contain a URL address.
+
+eg:
+ <form>
+  <label for="homepage">Add your homepage:</label>
+  <input type="url" id="homepage" name="homepage">
+</form> 
+
+Input type Week
+---------------------
+It allows the user to select a week and year
+
+eg:
+
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form> 
+
+Input Attributes
+=============
+The value Attribute
+----------------------
+The input value attribute specifies an initial value for an input field.
+
+The value of a read-only input field will be sent when submitting the form
+eg:
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Nikki">
+</form>
+
+readonly Attribute
+---------------------
+It specifies that an input field is readonly. 
+
+eg:
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Nikki" readonly>
+</form>
+
+disabled Attribute
+---------------------
+The input disabled attribute specifies that an input field should be disabled.
+
+The value of a disabled input field will not be sent when submitting the form.
+
+eg: 
+
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Nikki" disabled>
+</form>
+
+Size Attribute
+----------------
+It specifies the visible width,in characters,of an input field.
+
+The default value for size is 20.
+
+It works with text,search,tel,url,email and password.
+
+eg:
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Nikki" size="50">
+</form>
+
+maxlength Attribute
+--------------------------
+It specifies the maximum number of characters allowed in an input field.
+
+When a maxlength is set, the input field will not accept more than the specified number of characters.
+
+eg:
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="Nikki" maxlength="4">
+</form>
+
+min and maxAttributes
+----------------------------
+The input min and max attribute specify the minimum and maximum values for an input field.
+
+It works with the number,range,date,datetime-local,month,time and week.
+
+eg:
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31">
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+
+multiple Attribute
+---------------------
+It specifies that the user is allowedto enter more than one value in an input field.
+
+It works with email and file.
+
+eg:A file upload field that accepts multiple values
+<form>
+ <label for="files">Select Files:</label>
+  <input type="file" id="files" name="files" multiple>
+</form>
+
+pattern Attribute
+--------------------
+The input pattern attribute specifies a regular expression that the input field's value is checked against,when the form is submitted.
+
+It works with date,search,text,url,tel,email and password.
+
+eg:An input field that can contain only three letters (no numbers or special characters)
+<form>
+  <label for="country_code">Country code</label>
+  <input type="text"id="country_code" name="country_code"
+   pattern="[A-Za-z]{3}" title="Three letter country code">
+</form>
+
+placeholder Attribute
+----------------------
+It specifies a short hont that describes the expected value of an input field.
+
+The short hint is displayed in the input field before the user enters a value.
+
+It works with text,search,url,tel,email,and password.
+
+eg:
+<form>
+  <label for="phone">Enter a Phone number:</label>
+  <input type="tel"id="phone" name="phone"  placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" >
+</form>
+
+required Attribute
+---------------------
+The input required attribute specifies that aninput field must be filled out before submitting the form.
+
+It works with text,search,url,tel,password,datepickers,number,checkbox,radio and file.
+
+eg:
+<form>
+  <label for="username">username:</label>
+  <input type="text" id="username"name="username" required>
+</form>
+
+Step Attribute
+------------------
+The input step attribute specifies the legal number intervals for an input field.
+
+It works with number,range,date,dattime-local,month,time and week.
+
+eg:
+
+<form>
+  <label for="points">Points:</label>
+  <input type="number" id="points"name="points" steps="3">
+</form>
+
+autofocus Attribute
+----------------------
+The input autofocus attribute specifies that an input field should automatically get focus when the page loads.
+
+eg:
+<form>
+  <label for="uname">username:</label>
+  <input type="text" id="uname"name="uname" autofocus>
+</form>
+
+Height and width Attributes
+-----------------------------------
+The height and width attributes specify the height and width of an <input type="image"> element
+
+eg:
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+  <input type="image" src="img.jpeg" alt="submit"  width="48" height="48">
+</form>
+
+list Attribute
+-----------------
+The input list attributes refers to a <datalist>element that contains pre-defined options for an <input> element.
+
+eg:
+<form> 
+  <input list="browsers"name="browsers">
+   <datalist id="browsers">
+       <option value="opera">
+        <optionvalue="chrome">
+   </datalist>
+ </inputlist>
+</form> 
+
+autocomplete Attribute
+----------------------------
+The input autocomplete attribute specifies whether a form oran input field should have autocomplte on or off.
+
+Autocomplete allows the browser to prdeict the value.Whenauser starts to type in a field,the browser should display options to fill in the field,based on earlier typed values.
+
+It works with text,search,url,tel,email,password,datepickers,range,color.
+
+eg:
+<form>
+  <label for="uname">username:</label>
+  <input type="text" id="uname"name="uname" autocomplete="off">
+</form>
+
+Input Form attributes
+================
+form Attribute
+-------------------
+The input form attributes specifies the form the <input> element belongs to.
+
+The value of this attribute must be equal to the id attribute of the <form> element it belongs to.
+
+eg:
+<form action="  " id="form1">
+   <label for="fname">First name:</label>
+   <input type="text" id="fname" name="fname"><br>
+</form>
+<p>The "Lastname" field below is outside the form element,but still part of the form.</p>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+</body>
+</html>
+
+formaction Attribute
+--------------------------
+The input formaction attribute specifies the URL of the file that will process the input when the form is submitted.
+
+Note:The attribute overides  the action attribute of the <form> element.
+
+The formaction attribute works with submit and image.
+
+eg:
+<form action="  " >
+   <label for="fname">First name:</label>
+   <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname">
+  <input type="submit" value="submit">
+  <input type="submit" formaction="  "  value="submit as admin">
+</form>
+
+formenctype Attribute
+--------------------------
+The input formenctype attribute specifies how the form-data should be encoded when submitted(only for forms with method="post").
+
+Note:The attribute override the enctype attribute of the <form> element.
+
+The formenctype attribute works with submit and range.
+
+eg:A form with two submit buttons. The first sends the form-data with default encoding, the second sends the form-data encoded as "multipart/form-data".
+
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+</form>
+
+formmethod Attribute
+----------------------------
+The input formmethod attributes defines the HTTP method for
+sending form-data to th action URL.
+
+Note:This attribute overrides the method attribute of the <form> element.
+
+It works with submit and range.
+
+eg:A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data with method="post
+
+<form action="  "method="get">
+   <input type="submit" value="submit using GET">
+    <input type="submit"formmethod="post" value="submit using POST">
+</form>   
+
+formtarget Attribute
+------------------------
+The input formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+
+Note:This attribute overrides the target attribute of the <form> element.
+
+It works with submit and image.
+
+eg:
+ <form action="/action_page.php">
+  <input type="submit" value="Submit">
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+</form> 
+
+formnovalidate Attribute
+---------------------------
+The input formnovalidate attribute specifies that an <input> element should not be validated when submitted.
+
+Note:This attribute overides the novalidate attributes of the <form> element.
+
+It works with submit
+
+eg:A form with two submit buttons (with and without validation)
+<form action=" ">
+  <input type="submit" value="Submit">
+  <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+</form> 
+
+novalidate Attribute
+------------------------
+The novalidate attribute is a form <form> attribute.
+
+when  present,novalidate specifies that all of the form-data should not be validated when submitted.
+
+eg:
+ <form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+=============================================================================
