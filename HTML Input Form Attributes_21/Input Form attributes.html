@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Input Form Attributes</title>
+</head>
+<form action=" " id="form1">
+<h2>Form Attribute</h2>
+<label for="fname">Firstname</label>
+<input type="fname"  id="fname" name="fname">
+</form>
+<label for="lname">Lastname</label>
+<input type="lname" id="uname" name="uname" form="form1">
+<h2>Formaction</h2>
+<form action="  ">
+<input type="submit" value="submit">
+<input type="submit" formaction="Links.html" value="submit as a admin">
+</form>
+<h2>Formenctype(not working for me)</h2>
+<form action=" ">
+<label for="fname">Firstname</label>
+<input type="fname"  id="fname" name="fname">
+<input type="submit" formenctype="multipart/form-data" value="submit as a multipart/form data" >
+<h2>Formmethod</h2>
+<form action=" ">
+<label for="fname">Firstname</label>
+<input type="fname"  id="fname" name="fname">
+<input type="submit" value="submit using get">
+<input type="submit" formmethod="post" value="submit using POST">
+</form>
+<h2>Formtarget</h2>
+<form action=" ">
+<label for="fname">Firstname</label>
+<input type="fname"  id="fname" name="fname">
+<input type="submit" formtarget="_target" value="submit">
+</form>
+<h2>Formnovalidate</h2>
+<form action=" ">
+<label for ="email">Enter your Email</label>
+<input type="email" id="email" name="email">
+<input type="submit" value="submit without validation" formnovalidate="formnovalidate">
+</form>
+
+<h2>novalidate</h2>
+<form action=" " novalidate>
+<label for ="email">Enter your Email</label>
+<input type="email" id="email" name="email" >
+<input type="submit" value="submit" >
+</form>
+<!--The novalidate attribute is applied to a form and prevents it from validation. The formnovalidate is applied to input type submit button, which overrides the novalidate. It submits the form without validating--->
